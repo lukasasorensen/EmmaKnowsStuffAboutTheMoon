@@ -23,6 +23,7 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  overflow: auto;
 }
 
 .home-container h1.header {
