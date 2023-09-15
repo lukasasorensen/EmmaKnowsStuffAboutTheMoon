@@ -1,5 +1,5 @@
 <script setup>
-
+  
 </script>
 
 <template>
@@ -7,6 +7,13 @@
     <h1 class="header">Emma Knows Stuff About the Moon</h1>
     <div class="moon-image-container">
       <img class="moon-image" alt="Moon" src="@/assets/moon.png" />
+      <div class="moon-facts-container" ng-hide="isMoonFactsHidden">
+        <h2 class="facts-header">FACTS</h2>
+        <ul class="moon-facts-list">
+          <li>The moon controls the tides and human are 70% water so just think about that 🌙😵‍💫</li>
+          <li>Also moonlight?? What's up with that??</li>
+        </ul>
+      </div>
     </div>
     
   </div>
@@ -38,5 +45,9 @@
   width: 50vw; 
   height: 50vw;
   display: inline-block;
+}
+
+.moon-facts-container {
+  position: absolute;
 }
 </style>
